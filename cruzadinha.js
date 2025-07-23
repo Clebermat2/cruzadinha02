@@ -1,12 +1,12 @@
 class CrosswordGame {
     constructor() {
-        this.gridSize = 18; // ATUALIZADO: Aumentado para 18x18
+        this.gridSize = 18;
         this.currentCell = null;
         this.currentWord = null;
         this.currentDirection = 'horizontal';
         this.completedWords = new Set();
         
-        // ATUALIZADO: Definição das novas palavras e suas posições
+        // Definição das palavras e suas posições (COM A CORREÇÃO EM "ATA")
         this.words = {
             1: { // TOMBAMENTO (vertical)
                 word: 'TOMBAMENTO',
@@ -22,9 +22,9 @@ class CrosswordGame {
                 direction: 'horizontal',
                 clue: 'Conjunto de documentos que comprovam a aplicação dos recursos e devem ser guardados por 5 anos após aprovação.'
             },
-            3: { // ATA (vertical)
+            3: { // ATA (vertical) - POSIÇÃO CORRIGIDA
                 word: 'ATA',
-                startRow: 8,
+                startRow: 7,  // CORRIGIDO: de 8 para 7 para alinhar com o "T"
                 startCol: 4,
                 direction: 'vertical',
                 clue: 'Documento que formaliza a decisão da comunidade escolar sobre o que será adquirido com os recursos do PDDE.'
