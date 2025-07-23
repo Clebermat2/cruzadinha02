@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzadinha - Gestão Escolar PDDE</title>
+    <link rel="stylesheet" href="cruzadinha.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CRUZA<span class="accent">DINHA</span></h2>
+            </div>
+            <div class="accessibility-controls">
+                <button id="increase-font" class="control-btn" aria-label="Aumentar fonte">A+</button>
+                <button id="decrease-font" class="control-btn" aria-label="Diminuir fonte">A-</button>
+                <button id="increase-grid" class="control-btn" aria-label="Aumentar quadrados">□+</button>
+                <button id="decrease-grid" class="control-btn" aria-label="Diminuir quadrados">□-</button>
+                <button id="toggle-contrast" class="control-btn" aria-label="Alternar contraste">◐</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1 class="title">Cruzadinha – PDDE: Planejamento e Gestão</h1>
+                <p class="subtitle">Administrando o Futuro da Educação</p>
+                <p class="description">Utilize as dicas baseadas nos materiais fornecidos para preencher a cruzadinha e fortalecer sua compreensão sobre a gestão eficaz dos recursos do PDDE.</p>
+            </header>
+
+            <div class="game-container">
+                <div class="crossword-container">
+                    <div class="crossword-grid" id="crossword-grid" role="grid" aria-label="Grade da cruzadinha">
+                        </div>
+                </div>
+
+                <div class="clues-container">
+                    <div class="clues-section">
+                        <h2>Palavras Horizontais</h2>
+                        <div class="clue-list">
+                            <div class="clue-item" data-word="2">
+                                <span class="clue-number">2.</span>
+                                <span class="clue-text">Conjunto de documentos que comprovam a aplicação dos recursos e devem ser guardados por 5 anos após aprovação.</span>
+                                <span class="clue-answer" aria-label="17 letras">PRESTACAODECONTAS</span>
+                            </div>
+                            <div class="clue-item" data-word="4">
+                                <span class="clue-number">4.</span>
+                                <span class="clue-text">Princípio que garante igualdade de condições entre os fornecedores participantes das licitações.</span>
+                                <span class="clue-answer" aria-label="8 letras">ISONOMIA</span>
+                            </div>
+                            <div class="clue-item" data-word="5">
+                                <span class="clue-number">5.</span>
+                                <span class="clue-text">Responsável máximo pela unidade escolar e pela gestão dos recursos do PDDE.</span>
+                                <span class="clue-answer" aria-label="10 letras">PRESIDENTE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clues-section">
+                        <h2>Palavras Verticais</h2>
+                        <div class="clue-list">
+                            <div class="clue-item" data-word="1">
+                                <span class="clue-number">1.</span>
+                                <span class="clue-text">Processo obrigatório de registro dos bens permanentes adquiridos com recursos do PDDE no patrimônio da escola ou do ente federado.</span>
+                                <span class="clue-answer" aria-label="10 letras">TOMBAMENTO</span>
+                            </div>
+                            <div class="clue-item" data-word="3">
+                                <span class="clue-number">3.</span>
+                                <span class="clue-text">Documento que formaliza a decisão da comunidade escolar sobre o que será adquirido com os recursos do PDDE.</span>
+                                <span class="clue-answer" aria-label="3 letras">ATA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-status">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p class="status-text" id="status-text">Complete a cruzadinha preenchendo todas as palavras</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="cruzadinha.js"></script>
+</body>
+</html>
